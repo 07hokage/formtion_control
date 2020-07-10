@@ -1,8 +1,0 @@
-prefix=/home/haneesh/crazy_ws/devel
-
-Name: crazyflie_demo
-Description: Description of crazyflie_demo
-Version: 0.0.1
-Cflags: -I/home/haneesh/crazy_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: roscpp message_runtime std_msgs geometry_msgs
