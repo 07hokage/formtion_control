@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="myframe"/>
+  <arg name="worldFrame" default="world"/>
+  <arg name="name"/>
+
+  <node name="publish_pose" pkg="crazyflie_demo" type="goaldynamic.py" output="screen">
+    <param name="myframe" value="$(arg myframe)" />
+    <param name="worldFrame" value="$(arg worldFrame)" />
+    <param name="rate" value="50" />
+    <param name="name" value="$(arg name)" />
+    <rosparam command="load" file="$(find crazyflie_demo)/config/goals.yaml" />
+  </node>
+</launch>
