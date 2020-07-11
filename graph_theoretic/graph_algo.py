@@ -221,10 +221,10 @@ with open('data_form.csv', mode='w') as employee_file:
     		x,y,z,e = utm.from_latlon(item[0][j],item[1][j])
     		x1.append(x)
     		y1.append(y)
-    		num+=1
     	employee_writer.writerow(tm[num],[x1[0],y1[0],x1[1],y1[1],x1[2],y1[2],x1[3],y1[3]])
     	x1.clear()
     	y1.clear()
+    	num+=1
 
     	x1.append(lat[i][0])
     	x2.append(lat[i][1])
